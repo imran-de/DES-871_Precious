@@ -139,9 +139,6 @@ a {
   column-gap: 20px;
   text-align: center;
 }
-.citrusPrecious__litterCol {
-  /* border: 1px solid red; */
-}
 .citrusPrecious__categoryCard {
   width: 199px;
   margin: auto;
@@ -283,21 +280,54 @@ a {
 /*----------------------------------- responsive styling------------------------------------- */
 
 @media all and (min-width: 922px) and (max-width: 1200px) {
+  .citrusPrecious__povProduct {
+    width: 366px;
+    /* height: 196px; */
+    object-fit: contain;
+    left: -133px;
+    top: 63px;
+  }
+  .citrusPrecious__videoTextContainer {
+    padding-left: 10px;
+  }
+  .citrusPrecious__footerTextContainer {
+    padding-right: 10px;
+  }
 }
 
-@media all and (min-width: 769px) and (max-width: 921px) {
-  .citrusPrecious__litterRow {
+@media all and (min-width: 600px) and (max-width: 921px) {
+  .citrusPrecious__PovRow {
+    display: flex;
+    flex-direction: column;
+  }
+  .citrusPrecious__povLeft {
+    order: 2;
+  }
+  .citrusPrecious__povRight {
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+  }
+  .citrusPrecious__povProduct {
+    position: relative;
+    max-width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .citrusPrecious__povTextContainer {
+    margin: 40px auto;
+  }
+  .citrusPrecious__litterRow,
+  .citrusPrecious__productsRow {
     width: 100%;
+    margin-left: 20px;
+  }
+  .citrusPrecious__litterRow {
+    justify-content: left;
   }
 }
 @media all and (max-width: 768px) {
-  /* common styling */
-  .citrusBi_desktop__hide {
-    display: block;
-  }
-  .citrusBi_mobile__hide {
-    display: none;
-  }
   /* top pov */
   #citrusPrecious__povContainer {
     min-height: 380px;
@@ -354,7 +384,8 @@ a {
     margin-top: 35px;
   }
   .citrusPrecious__litterRow {
-    width: 160%;
+    /* width: 160%; */
+    justify-content: start;
   }
   .citrusPrecious__categoryCard {
     width: 130px;
@@ -394,7 +425,19 @@ a {
   .citrusPrecious__videoRow {
     grid-template-columns: repeat(1, 1fr);
   }
+  .citrusPrecious__footerRow .citrusPrecious__col {
+    text-align: center;
+  }
 }
 
-@media all and (max-width: 520px) {
+@media all and (min-width: 600px) and (max-width: 768px) {
+  .citrusPrecious__litterRow {
+    justify-content: center;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .citrusPrecious__povTextContainer p {
+    padding: 0 10px;
+  }
 }
