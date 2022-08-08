@@ -1,0 +1,305 @@
+/* font face add */
+/*
+ * Legal Disclaimer
+ *
+ * These web fonts are licensed exclusively for use on the following:
+ * All domains belonging to Petco
+ *
+ * It is strictly forbidden to download or use these fonts on any other website domain or media.
+ *
+ * While the @font-face statements below may be modified by the client, this
+ * disclaimer may not be removed.
+ *
+ * Lineto.com, 2020
+ */
+
+@font-face {
+  font-family: PetcoCircularTT-Regular;
+  src: url(assets/fonts/PetcoCircularTT-Regular.woff2) format("woff2"),
+    url(assets/fonts/PetcoCircularTT-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: PetcoCircularTT-Bold;
+  src: url(assets/fonts/PetcoCircularTT-Bold.woff2) format("woff2"),
+    url(/assets/fonts/PetcoCircularTT-Bold.woff) format("woff");
+}
+
+/* default css */
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "PetcoCircularTT-Regular", arial !important;
+}
+/* common styling */
+.citrusBi_desktop__hide {
+  display: none;
+}
+.citrusBi_mobile__hide {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+/* POV styling */
+#citrusPrecious__povContainer {
+  width: 100%;
+  max-width: 100%;
+  height: 380px;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 2px solid rebeccapurple;
+}
+.citrusPrecious__PovRow {
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 72% 28%;
+  grid-gap: 0;
+}
+.citrusPrecious__povLeft {
+  width: 100%;
+  height: 310px;
+  background: #001952;
+}
+.citrusPrecious__povRight {
+  width: 100%;
+  height: 310px;
+  background: #e9f7ff;
+}
+.citrusPrecious__logo {
+  margin: 30px 0;
+  width: 216px;
+  max-width: 100%;
+}
+.citrusPrecious__povProduct {
+  position: relative;
+  width: 442px;
+  height: 315px;
+  top: 43px;
+  left: -201px;
+}
+.citrusPrecious__povTextContainer {
+  width: 558px;
+  max-width: 100%;
+  margin-left: 10%;
+}
+.citrusPrecious__povTextContainer h1 {
+  margin: 0;
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  font-size: 35px;
+  font-weight: bold;
+  color: #fff;
+}
+.citrusPrecious__povTextContainer p {
+  margin: 10px 0 0 0;
+  font-family: "PetcoCircularTT-Regular", arial !important;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+}
+.citrusPrecious__CTA button {
+  margin-top: 30px;
+  width: 211px;
+  height: 56px;
+  background: #fff;
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  font-size: 16px;
+  color: #001952;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.citrusPrecious__CTA button:hover {
+  background: #001952;
+  color: #fff;
+}
+
+/* The ultra Litter difference */
+.citrusPrecious__sectionTitle {
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  font-size: 25px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+}
+.citrusPrecious__litterCategory {
+  width: 994px;
+  max-width: 100%;
+  margin: auto;
+  overflow: auto;
+}
+.citrusPrecious__litterRow {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 20px;
+  text-align: center;
+}
+.citrusPrecious__litterCol {
+  /* border: 1px solid red; */
+}
+.citrusPrecious__categoryCard {
+  width: 199px;
+  margin: auto;
+}
+.citrusPrecious__categoryCard img {
+  width: 177px;
+  max-width: 100%;
+  object-fit: contain;
+}
+.citrusPrecious__categoryCard--body p {
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+  color: #000;
+}
+.citrusPrecious__largeCTA {
+  text-align: center;
+}
+.citrusPrecious__largeCTA button {
+  margin-top: 40px;
+  width: 211px;
+  height: 56px;
+  background: #001952;
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Products  */
+#citrusPrecious__productContainer {
+  margin-top: 50px;
+}
+.citrusPrecious__products {
+  width: 826px;
+  max-width: 100%;
+  margin: auto;
+  overflow: auto;
+}
+.citrusPrecious__productsRow {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.citrusPrecious__productCard {
+  margin-top: 25px;
+  width: 198px;
+  max-width: 100%;
+}
+.citrusPrecious__productCard img {
+  max-width: 100%;
+  margin: auto;
+}
+.citrusPrecious__productCard--body p {
+  font-family: "PetcoCircularTT-Regular", arial !important;
+  font-size: 13px;
+  line-height: 18px;
+  color: #333333;
+}
+.citrusPrecious__productCard--body a {
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  font-size: 16px;
+  color: #001952;
+  text-decoration: underline;
+}
+
+/* video container */
+.citrusPrecious__VideoContainer {
+  margin: 70px auto;
+  background-color: #e9f7ff;
+  /* width: 1050px; */
+  position: relative;
+}
+.citrusPrecious__videoRow {
+  width: 1100px;
+  max-width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.citrusPrecious__DarkLogo {
+  width: 247px;
+  margin: auto;
+}
+.citrusPrecious__col {
+  position: relative;
+}
+.citrusPrecious__videoTextContainer,
+.citrusPrecious__footerTextContainer {
+  text-align: center;
+}
+.citrusPrecious__videoTextContainer h3,
+.citrusPrecious__footerTextContainer h3 {
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  font-size: 25px;
+  font-weight: bold;
+  color: #000;
+}
+.citrusPrecious__videoTextContainer p,
+.citrusPrecious__footerTextContainer p {
+  font-family: "PetcoCircularTT-Regular", arial !important;
+  font-size: 16px;
+  color: #000;
+  line-height: 22px;
+}
+.citrusPrecious__iframeContainer {
+  position: relative;
+  top: -30px;
+}
+/* footer */
+.citrusPrecious__footer {
+  margin-bottom: 30px;
+}
+.citrusPrecious__footerRow {
+  width: 1100px;
+  max-width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+.citrusPrecious__footerImg {
+  width: 448px;
+  max-width: 100%;
+  object-fit: contain;
+  margin: auto;
+}
+.citrusPrecious__footerTextContainer .citrusPrecious__largeCTA button {
+  margin-top: 0;
+}
+/*----------------------------------- responsive styling------------------------------------- */
+@media all and (min-width: 2150px) {
+}
+@media all and (min-width: 1441px) {
+}
+@media all and (min-width: 922px) and (max-width: 1200px) {
+}
+
+@media all and (min-width: 769px) and (max-width: 921px) {
+}
+@media all and (max-width: 768px) {
+  /* common styling */
+  .citrusBi_desktop__hide {
+    display: block;
+  }
+  .citrusBi_mobile__hide {
+    display: none;
+  }
+}
+
+@media all and (max-width: 520px) {
+}
