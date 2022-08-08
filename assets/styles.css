@@ -45,10 +45,9 @@ a {
 #citrusPrecious__povContainer {
   width: 100%;
   max-width: 100%;
-  height: 380px;
+  min-height: 380px;
   position: relative;
   overflow: hidden;
-  border-bottom: 2px solid rebeccapurple;
 }
 .citrusPrecious__PovRow {
   position: relative;
@@ -60,12 +59,12 @@ a {
 }
 .citrusPrecious__povLeft {
   width: 100%;
-  height: 310px;
+  min-height: 310px;
   background: #001952;
 }
 .citrusPrecious__povRight {
   width: 100%;
-  height: 310px;
+  min-height: 310px;
   background: #e9f7ff;
 }
 .citrusPrecious__logo {
@@ -282,14 +281,14 @@ a {
   margin-top: 0;
 }
 /*----------------------------------- responsive styling------------------------------------- */
-@media all and (min-width: 2150px) {
-}
-@media all and (min-width: 1441px) {
-}
+
 @media all and (min-width: 922px) and (max-width: 1200px) {
 }
 
 @media all and (min-width: 769px) and (max-width: 921px) {
+  .citrusPrecious__litterRow {
+    width: 100%;
+  }
 }
 @media all and (max-width: 768px) {
   /* common styling */
@@ -298,6 +297,102 @@ a {
   }
   .citrusBi_mobile__hide {
     display: none;
+  }
+  /* top pov */
+  #citrusPrecious__povContainer {
+    min-height: 380px;
+  }
+  .citrusPrecious__PovRow {
+    display: flex;
+    flex-direction: column;
+  }
+  .citrusPrecious__povLeft {
+    order: 2;
+  }
+  .citrusPrecious__povRight {
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+  }
+  .citrusPrecious__povProduct {
+    position: relative;
+    width: 266px;
+    max-width: 100%;
+    height: 196px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .citrusPrecious__povTextContainer {
+    margin-left: 0;
+    text-align: center;
+    margin-bottom: 0px;
+    margin: auto;
+  }
+  .citrusPrecious__logo {
+    width: 162px;
+    margin: 60px auto 30px;
+  }
+  .citrusPrecious__povTextContainer h1 {
+    font-size: 25px;
+  }
+  .citrusPrecious__CTA button,
+  .citrusPrecious__largeCTA button {
+    background: none;
+    color: #fff;
+    text-transform: capitalize;
+    text-decoration: underline;
+    margin-top: 20px;
+  }
+  .citrusPrecious__largeCTA button {
+    color: #001952;
+  }
+  .citrusPrecious__sectionTitle {
+    font-size: 20px;
+  }
+  #citrusPrecious__litterContainer {
+    margin-top: 35px;
+  }
+  .citrusPrecious__litterRow {
+    width: 160%;
+  }
+  .citrusPrecious__categoryCard {
+    width: 130px;
+  }
+  .citrusPrecious__categoryCard img {
+    width: 115px;
+  }
+  .citrusPrecious__categoryCard--body p {
+    font-size: 15px;
+    line-height: 17px;
+  }
+  .citrusPrecious__products {
+    padding: 0 10px 0 20px;
+    max-width: 90%;
+  }
+  .citrusPrecious__DarkLogo {
+    width: 171px;
+    max-width: 100%;
+  }
+  .citrusPrecious__videoTextContainer h3,
+  .citrusPrecious__footerTextContainer h3 {
+    font-size: 20px;
+  }
+  .citrusPrecious__videoTextContainer,
+  .citrusPrecious__footerTextContainer {
+    padding: 35px 10px 40px 10px;
+  }
+  .citrusPrecious__VideoContainer {
+    background: none;
+    margin: 30px auto;
+  }
+  .citrusPrecious__videoTextContainer {
+    background-color: #e9f7ff;
+  }
+  /* footer section */
+  .citrusPrecious__footerRow,
+  .citrusPrecious__videoRow {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
